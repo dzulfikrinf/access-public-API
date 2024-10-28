@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization with Chart.js and Tailwind CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-2xl font-bold mb-4">Data Film dengan Penonton Terbanyak</h1>
+        
+        <div class="mb-8">
+            <canvas id="barChart" width="400" height="200"></canvas>
+        </div>
+    </div>
+
+    <div class="max-w-4xl mx-auto">
+        <div class="flex gap-3 justify-between flex-wrap">
+            <div class="mb-8">
+                <h2 class="text-lg font-semibold mb-2 text-center">5 Genre Film Berdasarkan Banyaknya Film</h2>
+                <canvas id="pieChart1" width="400" height="200"></canvas>
+            </div>
+    
+            <div>
+                <h2 class="text-lg font-semibold mb-2 text-center">5 Genre Berdasarkan Popularitas</h2>
+                <canvas id="pieChart2" width="400" height="200"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+</body>
+</html>
